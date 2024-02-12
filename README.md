@@ -1,1 +1,4 @@
-# VaR_EVT_threshold
+# VaR using EVT approach with unknown shape parameter confidence interval width and threshold selection
+
+Value at Risk (VaRα) is an important metric of quantitative financial risk, it measures the value that a portfolio might lose at its α-quantile worse scenario. In recent years, Extreme Value Theory started being applied to estimate this number. This approach is dependent on the choice of the threshold u that defines the starting point of the tail for the returns distribution. There are some heuristics to choosing this limit but a case-by-case study is still required for this analysis.
+We propose an assessment of the confidence interval of the VaRα estimator by propagating the uncertainty of the shape parameter ξ from the tail distribution, approximated by a Generalized Pareto Distribution. The results show that choosing the threshold such that the proportion of points beyond is the complement of the level α is optimal when enough points are available. Otherwise, we find empirical evidence of a log-linear relationship between the width of the confidence interval of VaRα with unknown ξ and the proportion of points above the threshold.
